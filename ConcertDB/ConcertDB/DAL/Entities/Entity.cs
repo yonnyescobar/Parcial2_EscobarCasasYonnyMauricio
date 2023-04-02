@@ -9,7 +9,7 @@ namespace ConcertDB.DAL.Entities
         [Key]
         [Required(ErrorMessage = "El campo {0} es obligatorio.")]
         [Display(Name = "Número de boleta")]
-        public int Id { get; set; }
+        public Guid Id { get; set; }
 
         [Display(Name = "Fecha de uso")]
         public DateTime? UseDate { get; set; }

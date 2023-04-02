@@ -4,10 +4,10 @@ using Microsoft.EntityFrameworkCore;
 
 namespace ConcertDB.DAL
 {
-    public class Database : DbContext
+    public class DatabaseContext : DbContext
     {
         #region constructor
-        public Database(DbContextOptions<Database> options) : base(options)
+        public DatabaseContext(DbContextOptions<DatabaseContext> options) : base(options)
         {
 
         }

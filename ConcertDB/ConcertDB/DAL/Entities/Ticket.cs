@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
 namespace ConcertDB.DAL.Entities
@@ -7,6 +8,7 @@ namespace ConcertDB.DAL.Entities
     {
         #region properties
         [Display(Name = "Estado")]
+        [DefaultValue(false)]
         public bool IsUsed { get; set; }
 
         [MaxLength(50, ErrorMessage = "El campo {0} debe ser de {1} caracteres.")]
